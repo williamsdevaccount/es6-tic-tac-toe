@@ -4,8 +4,7 @@
   "description": "a vanilla es6 tic tac toe game implementation",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify js/app.js -o lib/app.js -t [ babelify --presets [es2015 react] ]"
+    "build": "node_modules/.bin/browserify js/app.js -o dist/app.js -t [ babelify --presets [es2015 react] ]"
   },
   "devDependencies": {
     "babel": "6.23.0",
