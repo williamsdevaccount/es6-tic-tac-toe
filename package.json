@@ -1,0 +1,20 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "a vanilla es6 tic tac toe game implementation",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/app.js -o lib/app.js -t [ babelify --presets [es2015 react] ]"
+  },
+  "devDependencies": {
+    "babel": "6.23.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babelify": "7.3.0",
+    "browserify": "14.4.0"
+  },
+  "author": "william stowers",
+  "license": "ISC"
+}

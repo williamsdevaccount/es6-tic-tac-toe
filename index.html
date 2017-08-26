@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<link rel="stylesheet" href="css/game.css">
+<body>
+    <div class="game" id="main">
+        <div id="header">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div id="gameContainer">
+            <table class="table" id="board">
+                <tbody>
+                <tr>
+                    <td data-position="1"></td>
+                    <td data-position="2"></td>
+                    <td data-position="3"></td>
+                </tr>
+                <tr>
+                    <td data-position="4"></td>
+                    <td data-position="5"></td>
+                    <td data-position="6"></td>
+                </tr>
+                <tr>
+                    <td data-position="7"></td>
+                    <td data-position="8"></td>
+                    <td data-position="9"></td>
+                </tr>
+                </tbody>
+            </table>
+            <div id="controls">
+                <button id="btnRestart" class="btn">Restart</button>
+            </div>
+        </div>
+    </div>
+    <div id="gameModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Game Over! Everyone Wins! Play Again?</p>
+            <button id="btnDialogYes" class="btn">YES</button>
+            <button id="btnDialogNo" class="btn">NO</button>
+        </div>
+
+    </div>
+</body>
+<script src="dist/app.js" type="application/javascript"></script>
+</html>

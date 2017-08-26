@@ -1,0 +1,169 @@
+body {
+    margin : 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2em;
+}
+#gameContainer{
+    background-color: transparent;
+}
+#header{
+    background-color: #81D4FA;
+    height: auto;
+    width:100vw;
+    text-align: center;
+    display:table;
+    overflow : hidden;
+}
+#controls{
+    background-color: transparent;
+    width : 50vw;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    display : table;
+    overflow : hidden;
+}
+#board{
+    overflow : hidden;
+    height: 50vh;
+    margin: 20px auto 5% auto;
+    text-align: center;
+    width: 50vw;
+}
+#board table{
+    vertical-align: center;
+}
+#board td{
+    background-color: #66BB6A;
+    border: solid 7px #37474F;
+    cursor: hand;
+    font-size: 10em;
+    line-height: 140px;
+
+    max-height: 100px;
+    min-height: 100px;
+    height: 100px;
+
+    max-width: 100px;
+    min-width: 100px;
+    width: 100px;
+
+    vertical-align: middle;
+}
+#board td:hover{
+    background-color: #A5D6A7;
+}
+
+@media(max-width: 768px) {
+    #board {
+        width: 75vw;
+        height: 75vh;
+        margin: 20px auto 0.5% auto;
+    }
+
+}
+@media (max-height: 640px){
+    #board{
+        margin: 20px auto 10px auto;
+    }
+    #board td{
+        font-size: 4em;
+        line-height: 80px;
+    }
+}
+@media (min-width: 768px){
+    #board td{
+        max-height: 200px;
+        min-height: 200px;
+        height: 200px;
+        max-width: 200px;
+        min-width: 200px;
+        width: 200px;
+    }
+}
+@media (max-width: 480px) {
+    h1{
+        font-size: 1em;
+    }
+    #board{
+        height: 45vh;
+        width:45vw;
+    }
+    #board td{
+        font-size: 3em;
+        line-height: 75px;
+        max-height: 75px;
+        min-height: 75px;
+        height: 75px;
+        max-width: 75px;
+        min-width: 75px;
+        width: 75px;
+    }
+}
+
+.btn {
+    margin: 0;
+    border: 0 transparent;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    font-size: 24px;
+    font-family: inherit;
+    padding: 8px 15px;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.18), 0 1px 5px 0 rgba(0,0,0,0.15);
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background: #1d89ff;
+    color: #fff;
+}
+.btn:hover,
+.btn:focus {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    -webkit-transition: box-shadow 0.4s ease-out;
+    transition: box-shadow 0.4s ease-out;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
